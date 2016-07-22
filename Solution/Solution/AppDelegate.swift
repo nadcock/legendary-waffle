@@ -21,11 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         stack.autoSave(5)
         
-        do{
-            try stack.dropAllData()
-        }catch{
-            fatalError("Error while saving backgroundContext: \(error)")
-        }
+        // uncomment this to clear out database data on load
+//        do{
+//            try stack.dropAllData()
+//        }catch{
+//            fatalError("Error while saving backgroundContext: \(error)")
+//        }
         
         tabBarController = SolutionTabViewController()
         let firstVC = UserNavigationController()
