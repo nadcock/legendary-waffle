@@ -68,7 +68,15 @@ The models consists of the following:
         * Catch Phrase
         * BS
 
-These are all subclasses of NSManagedObject as to be handled by Core Data.
+* A **Album** object consisting of:
+    * ID
+    * Multiple **Photo** objects:
+       * ID
+       * Title
+       * Thumbnail URL
+       * URL
+
+These are all subclasses of NSManagedObject as to be handled by Core Data. The photo object has a many-to-one relationship to album, but all other objects are one-to-one.
 
 ## Further Development
 
