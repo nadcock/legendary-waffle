@@ -82,6 +82,8 @@ These are all subclasses of NSManagedObject as to be handled by Core Data. The p
 
 A few featurs that could be added in the future:
 
+* The API can be restructured to be a bit more manigable. I would create just one "loadData()" method that would take in an pass a closure into a seperate "makeRequest()" method that completes the request. Which closure is passed could be decided by an enum.
+
 * Currently the Address's geo coordinates are not used. A feature could be added to display a MapView with the geotagged coordinates as an annotation
 
 * The thumbnail images could be cached or added to Core Data, though adding them to Core Data may effect performance.
