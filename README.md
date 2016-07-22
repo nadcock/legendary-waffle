@@ -5,13 +5,13 @@
 Code a simple application that meets the following requirements.
 * The application should be able to fetch a list of all users from the following endpoint:
 
-..* [http://jsonplaceholder.typicode.com/users](http://jsonplaceholder.typicode.com/users)
+    * [http://jsonplaceholder.typicode.com/users](http://jsonplaceholder.typicode.com/users)
 
 * The application should be able to persist the list of all users to the local
 database, to be used on future startups
 
 * The application should display the list of users from above
-..* The list cells should provide the relevant and most important
+    * The list cells should provide the relevant and most important
 information of the above user
 
 * The application user should be able to select one of the users from the list,
@@ -23,9 +23,9 @@ and see all of the information related to that user
 
 * For super-extra-credit, create a mechanism for displaying the photos, as defined by
 
-..* [http://jsonplaceholder.typicode.com/photos](http://jsonplaceholder.typicode.com/photos)
+    * [http://jsonplaceholder.typicode.com/photos](http://jsonplaceholder.typicode.com/photos)
 
-..*There is no need to handle all of the photos, perhaps pick a specific
+    * There is no need to handle all of the photos, perhaps pick a specific
 photo or two, or maybe an entire album in a list, depending on how far you want to go!
 
 ## Solution
@@ -49,24 +49,24 @@ This is initially similar to UserNavigationViewController, in that is has a Tabl
 The models consists of the following:
 
 * A **User** object consiting of:
-..* ID
-..* Name
-..* Username
-..* Email
-..* Phone
-..* Website
-..* An **Address** object consisting of:
-....* Street
-....* Suite
-....* City
-....* Zip
-....* A **Geo** object:
-......* Latitude
-......* Longitude
-..* A **Company** object consisting of:
-....* Name
-....* Catch Phrase
-....* BS
+    * ID
+    * Name
+    * Username
+    * Email
+    * Phone
+    * Website
+    * An **Address** object consisting of:
+        * Street
+        * Suite
+        * City
+        * Zip
+        * A **Geo** object:
+            * Latitude
+            * Longitude
+    * A **Company** object consisting of:
+        * Name
+        * Catch Phrase
+        * BS
 
 These are all subclasses of NSManagedObject as to be handled by Core Data.
 
@@ -79,10 +79,3 @@ A few featurs that could be added in the future:
 * The thumbnail images could be cached or added to Core Data, though adding them to Core Data may effect performance.
 
 * There is currently a bug with endpoint data for photos. The returned url for a photo's thumbnail and full size photo are not the same. A way to fix this would be to eliminate the different URLs in the Photo object and create a new attribute called "URLID" that just saves the very last part of the directory and uses it combined with a static url prefix to download the photos.
-
-
-
-
-
-
-
