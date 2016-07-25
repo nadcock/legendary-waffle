@@ -111,7 +111,7 @@ struct CoreDataStack {
 // MARK:  - Removing data
 extension CoreDataStack  {
     
-    func dropAllData() throws{
+    func dropAllData() throws {
         // delete all the objects in the db. This won't delete the files, it will
         // just leave empty tables.
         try coordinator.destroyPersistentStoreAtURL(dbURL, withType:NSSQLiteStoreType , options: nil)
@@ -130,11 +130,6 @@ extension CoreDataStack{
             // Save it to the parent context, so normal saving
             // can work
             self.save()
-//            do{
-//                
-//            }catch{
-//                fatalError("Error while saving backgroundContext: \(error)")
-//            }
         }
     }
 }
@@ -157,8 +152,8 @@ extension CoreDataStack {
         
         // Create temp context
         let moc = backgroundContext
-        //moc.name = "Importer"
-        //moc.persistentStoreCoordinator = tmpCoord
+        moc.name = "Importer"
+        moc.persistentStoreCoordinator = tmpCoord
         
         // Run the batch task, save the contents of the moc & notify
         moc.performBlock(){

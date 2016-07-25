@@ -11,6 +11,8 @@
 		01E6B4EC1D41901600C499F5 /* Static.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 01E6B4E51D41894400C499F5 /* Static.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		01E6B4EF1D41914D00C499F5 /* UserNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E6B4EE1D41914D00C499F5 /* UserNavigationController.swift */; };
 		01E6B4F11D41937900C499F5 /* CompanyDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E6B4F01D41937900C499F5 /* CompanyDetailTableViewController.swift */; };
+		01E6B4F31D46ACC700C499F5 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E6B4F21D46ACC700C499F5 /* Alert.swift */; };
+		01E6B4F51D46ADBC00C499F5 /* DBAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E6B4F41D46ADBC00C499F5 /* DBAlertController.swift */; };
 		B47E70271D3EA1230027E6DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47E70261D3EA1230027E6DE /* AppDelegate.swift */; };
 		B47E70301D3EA1230027E6DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47E702F1D3EA1230027E6DE /* Assets.xcassets */; };
 		B47E703E1D3EA1230027E6DE /* SolutionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47E703D1D3EA1230027E6DE /* SolutionTests.swift */; };
@@ -90,6 +92,8 @@
 		01E6B4E51D41894400C499F5 /* Static.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Static.framework; path = Carthage/Build/iOS/Static.framework; sourceTree = "<group>"; };
 		01E6B4EE1D41914D00C499F5 /* UserNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNavigationController.swift; sourceTree = "<group>"; };
 		01E6B4F01D41937900C499F5 /* CompanyDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyDetailTableViewController.swift; sourceTree = "<group>"; };
+		01E6B4F21D46ACC700C499F5 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		01E6B4F41D46ADBC00C499F5 /* DBAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBAlertController.swift; sourceTree = "<group>"; };
 		B47E70231D3EA1220027E6DE /* Solution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Solution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47E70261D3EA1230027E6DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B47E702F1D3EA1230027E6DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -197,6 +201,7 @@
 				B47E704C1D3EA32D0027E6DE /* UserTableViewController.swift */,
 				B47E70551D3EA4C50027E6DE /* UserDetailTableViewContoller.swift */,
 				01E6B4F01D41937900C499F5 /* CompanyDetailTableViewController.swift */,
+				01E6B4F41D46ADBC00C499F5 /* DBAlertController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				B47E70AC1D3EE60A0027E6DE /* PhotoCollectionViewCell.swift */,
+				01E6B4F21D46ACC700C499F5 /* Alert.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -340,12 +346,14 @@
 				B47E709D1D3EBAFA0027E6DE /* Company+CoreDataProperties.swift in Sources */,
 				B47E70BB1D3EF4A90027E6DE /* Album.swift in Sources */,
 				B47E70AD1D3EE60A0027E6DE /* PhotoCollectionViewCell.swift in Sources */,
+				01E6B4F31D46ACC700C499F5 /* Alert.swift in Sources */,
 				B47E70501D3EA35B0027E6DE /* AlbumTableViewController.swift in Sources */,
 				B47E708B1D3EB6BC0027E6DE /* Model.xcdatamodeld in Sources */,
 				B47E70491D3EA2680027E6DE /* SolutionTabViewController.swift in Sources */,
 				B47E70591D3EA4DA0027E6DE /* PhotoViewController.swift in Sources */,
 				B47E704D1D3EA32D0027E6DE /* UserTableViewController.swift in Sources */,
 				B47E70271D3EA1230027E6DE /* AppDelegate.swift in Sources */,
+				01E6B4F51D46ADBC00C499F5 /* DBAlertController.swift in Sources */,
 				B47E70971D3EBAFA0027E6DE /* User.swift in Sources */,
 				B47E70BE1D40060D0027E6DE /* AlbumNavigationController.swift in Sources */,
 				B47E70991D3EBAFA0027E6DE /* Geo+CoreDataProperties.swift in Sources */,
