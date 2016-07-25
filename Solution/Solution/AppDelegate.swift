@@ -21,11 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         stack.autoSave(5)
         
-        do{
-            try CoreDataStack.stack.dropAllData()
-        }catch{
-            fatalError("Error while dropping data: \(error)")
-        }
+        //uncomment to quickly clear data on load
+//        do{
+//            try CoreDataStack.stack.dropAllData()
+//        }catch{
+//            fatalError("Error while dropping data: \(error)")
+//        }
         
         tabBarController = SolutionTabViewController()
         let firstVC = UserNavigationController()
