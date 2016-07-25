@@ -17,6 +17,8 @@ class PhotoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "\(photo!.title!)"
+        
         imageView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(imageView)
         var constraints = NSLayoutConstraint.constraintsWithVisualFormat(
