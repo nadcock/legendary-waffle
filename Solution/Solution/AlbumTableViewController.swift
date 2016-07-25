@@ -38,7 +38,7 @@ class AlbumTableViewController: UITableViewController, NSFetchedResultsControlle
     
     override func viewWillAppear(animated: Bool) {
         if fetchedResultsController.fetchedObjects?.count < 1 {
-            API.sharedInstance.loadPhotos()
+            API.sharedInstance.loadData(.Photos)
         }
         navigationItem.title = "Albums"
     }
@@ -122,8 +122,6 @@ class AlbumTableViewController: UITableViewController, NSFetchedResultsControlle
             tableView.deleteRowsAtIndexPaths([indexPath!], withRowAnimation: .Fade)
             tableView.insertRowsAtIndexPaths([newIndexPath!], withRowAnimation: .Fade)
             
-        default:
-            return
         }
     }
     func controllerDidChangeContent(controller: NSFetchedResultsController) {

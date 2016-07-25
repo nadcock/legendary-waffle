@@ -36,7 +36,7 @@ class UserTableViewController: UITableViewController, NSFetchedResultsController
     
     override func viewWillAppear(animated: Bool) {
         if fetchedResultsController.fetchedObjects?.count < 1 {
-            API.sharedInstance.loadUsers()
+            API.sharedInstance.loadData(.Users)
         }
     }
     
@@ -121,9 +121,7 @@ class UserTableViewController: UITableViewController, NSFetchedResultsController
         case .Move:
             tableView.deleteRowsAtIndexPaths([indexPath!], withRowAnimation: .Fade)
             tableView.insertRowsAtIndexPaths([newIndexPath!], withRowAnimation: .Fade)
-            
-        default:
-            return
+
         }
     }
     func controllerDidChangeContent(controller: NSFetchedResultsController) {
